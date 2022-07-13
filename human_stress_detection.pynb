@@ -4,7 +4,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-URL ='https://drive.google.com/file/d/12fjJe6jr6XUV2KeyKv8JHe5sgyj0DyfL/view?usp=sharing'
+URL ='https://raw.githubusercontent.com/patilAdesh/Human_Stress_Detection_In_and_Through_Sleep/main/sleep.csv'
 data = pd.read_csv(URL)
 data.rename(columns = {'sr.1':'sh'}, inplace=True)
 data.head()
@@ -28,7 +28,7 @@ heart_rate_plot.set_xlabel("Stress level", fontsize=14)
 heart_rate_plot.set_ylabel("Heart rate", fontsize=14)
 
 blood_ohygen_plot = sns.lineplot(data=data, x='sl',y='bo')
-blood_ohygen_plot.axes.set_title("Dependence of stress level on blood ohygen", fontsize=16)
+blood_ohygen_plot.axes.set_title("Dependence of stress level on blood oxygen", fontsize=16)
 blood_ohygen_plot.set_xlabel("Stress level", fontsize=14)
 blood_ohygen_plot.set_ylabel("Blood ohygen", fontsize=14)
 
