@@ -27,10 +27,10 @@ heart_rate_plot.axes.set_title("Dependence of stress level on heart rate", fonts
 heart_rate_plot.set_xlabel("Stress level", fontsize=14)
 heart_rate_plot.set_ylabel("Heart rate", fontsize=14)
 
-blood_ohygen_plot = sns.lineplot(data=data, x='sl',y='bo')
-blood_ohygen_plot.axes.set_title("Dependence of stress level on blood oxygen", fontsize=16)
-blood_ohygen_plot.set_xlabel("Stress level", fontsize=14)
-blood_ohygen_plot.set_ylabel("Blood ohygen", fontsize=14)
+blood_oxygen_plot = sns.lineplot(data=data, x='sl',y='bo')
+blood_oxygen_plot.axes.set_title("Dependence of stress level on blood oxygen", fontsize=16)
+blood_oxygen_plot.set_xlabel("Stress level", fontsize=14)
+blood_oxygen_plot.set_ylabel("Blood ohygen", fontsize=14)
 
 X = data.drop(columns='sl')
 y = data.sl
