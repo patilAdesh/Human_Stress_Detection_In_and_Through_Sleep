@@ -17,3 +17,5 @@ If any mistake, or any problem pls be free to ask for it.
 I have used pandas for importing and reading the .csv file
 
 The project uses the sleeping_rate, respiration_rate,, body_temprature, limb_movement, blood_oxygen, eye_movement, sleeping_hours from the csv file and displays the stress detected using the heat map.
+
+And the Model Training gives the accuracy of the model comparing the output and the csv file.
